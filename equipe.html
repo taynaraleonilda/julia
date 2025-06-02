@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Equipe - Conexão Sustentável</title>
+
+  <!-- Fontes e estilos -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --verde-escuro: #3A5A40;
+      --verde-medio: #588157;
+      --verde-claro: #A3B18A;
+      --bege-claro: #FEFAE0;
+      --bege-medio: #EDE5C1;
+      --texto-principal: #2D332C;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body,
+    html {
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      color: var(--texto-principal);
+      background-color: var(--bege-claro);
+    }
+
+    .fundo-equipe {
+      background-image: url('img/equipe.png'); /* Se precisar de uma imagem de fundo, basta atualizar o caminho */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2em;
+      background-color: rgba(58, 90, 64, 0.4);
+      background-blend-mode: darken;
+    }
+
+    .conteudo {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 2em;
+      border-radius: 12px;
+      max-width: 900px;
+      width: 100%;
+      color: var(--texto-principal);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 1em;
+      color: var(--verde-escuro);
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--texto-principal);
+    }
+
+    .contato {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 1.5em 0;
+      padding: 1.2em;
+      background-color: var(--verde-medio);
+      color: white;
+      border-radius: 8px;
+      display: inline-block;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contato span {
+      display: block;
+      margin: 0.5em 0;
+    }
+
+    a.voltar {
+      display: inline-block;
+      margin-top: 2em;
+      padding: 0.8em 1.5em;
+      background-color: var(--verde-medio);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+    }
+
+    a.voltar:hover {
+      background-color: var(--verde-escuro);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="fundo-equipe">
+    <div class="conteudo">
+      <h1>Equipe - Conexão Sustentável</h1>
+      <p>
+        A equipe do Conexão Sustentável é formada por profissionais dedicados a promover um desenvolvimento sustentável, unindo o campo e a cidade de forma consciente e colaborativa. Nosso objetivo é gerar um impacto positivo por meio de práticas sustentáveis e soluções inovadoras para todos os envolvidos.
+      </p>
+
+      <!-- Contato em destaque -->
+      <div class="contato">
+        <p>Entre em contato conosco:</p>
+        <span>Ana Julia: +55 45 9911-1069</span>
+        <span>Julia: +55 45 9840-0266</span>
+      </div>
+
+      <p>
+        Se você deseja saber mais sobre o nosso trabalho ou tem alguma dúvida, não hesite em nos contatar. Estamos sempre dispostos a ajudar!
+      </p>
+      
+      <a href="servicos.html" class="voltar">Voltar aos Serviços</a>
+    </div>
+  </section>
+</body>
+
+</html>

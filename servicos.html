@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simulador de Economia Local | Conexão Sustentável</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bege-claro: #fffdf8;
+      --bege-escuro: #7a634e;
+      --marrom-claro: #7b5f44;
+      --marrom-escuro: #87b86c;
+      --cinza-claro: #e1e1e1;
+      --texto: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(120deg, var(--marrom-escuro), var(--bege-claro));
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      color: var(--texto);
+    }
+
+    .container {
+      background-color: var(--bege-claro);
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      color: var(--marrom-escuro);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .descricao {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .card {
+      background-color: var(--cinza-claro);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+      color: var(--marrom-claro);
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      line-height: 1.5;
+    }
+
+    footer {
+      margin-top: 2rem;
+      color: white;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--marrom-claro);
+      color: white;
+      padding: 0.6rem 1.5rem; /* Diminuindo o padding para tornar o botão menor */
+      text-decoration: none;
+      border-radius: 8px; /* Reduzindo o arredondamento */
+      text-align: center;
+      font-weight: bold;
+      margin-top: 1rem; /* Ajustando o espaço do botão */
+      font-size: 14px; /* Diminuindo o tamanho da fonte */
+    }
+
+    .btn:hover {
+      background-color: var(--marrom-escuro);
+    }
+
+    .botao-container {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px; /* Diminuindo o espaçamento entre os botões */
+      margin-top: 1.5rem;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+    }
+
+    .botao-container a {
+      background-color: var(--marrom-claro);
+      color: white;
+      padding: 0.6rem 1.5rem; /* Reduzindo o padding para tornar o botão menor */
+      text-decoration: none;
+      font-size: 14px; /* Diminuindo o tamanho da fonte */
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .botao-container a:hover {
+      background-color: var(--marrom-escuro);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 1rem;
+      }
+
+      .card {
+        padding: 1rem;
+      }
+
+      .botao-container {
+        flex-direction: column;
+        gap: 10px;
+        top: 1rem;
+        right: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- CABEÇALHO -->
+  <header>
+    <h1>🛒 Simulador de Economia Local</h1>
+
+    <!-- Botões de "Conheça a Equipe" e "Deixe seu Feedback" -->
+    <div class="botao-container">
+      <a href="equipe.html">Conheça a Equipe</a>
+      <a href="feedback.html">Deixe seu Feedback</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <p class="descricao">
+      Bem-vindo ao Simulador de Economia Local! Neste projeto, você irá aprender como a cooperação entre o campo e a cidade pode gerar desenvolvimento sustentável e fortalecer a economia local. Vamos explorar isso de forma interativa!
+    </p>
+
+    <div class="card">
+      <h2>🌱 O que é o Simulador?</h2>
+      <p>
+        O simulador de economia local é uma ferramenta educativa que ajuda a entender como o comércio entre produtores rurais e a cidade pode ser equilibrado para gerar um desenvolvimento sustentável. Ao longo do quiz, você verá situações típicas de compra, venda, produção e consumo e como suas escolhas afetam a economia.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>🎯 Objetivo do Simulador</h2>
+      <p>
+        O objetivo deste projeto é ensinar como escolhas conscientes no comércio local podem impactar positivamente a economia, reduzir desperdícios e fortalecer a comunidade. Ao responder as perguntas do quiz, você verá como a cooperação entre o campo e a cidade gera prosperidade para todos.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>🤝 Campo e Cidade Juntos</h2>
+      <p>
+        Agricultores e moradores da cidade têm um papel fundamental na economia local. Os agricultores fornecem alimentos frescos e produtos naturais, enquanto a cidade contribui com insumos, tecnologia e demanda. Ao longo deste quiz, você verá como essas trocas criam um ciclo virtuoso de prosperidade. 
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>🔍 O que você vai aprender?</h2>
+      <p>
+        Em breve, você será desafiado a tomar decisões e ver como elas afetam a economia local. O quiz foi criado para que você explore cenários reais e reflita sobre o impacto das suas escolhas no comércio local e no meio ambiente.
+      </p>
+    </div>
+
+    <a href="quiz.html" class="btn">Iniciar Quiz</a>
+  </div>
+
+  <footer>
+    © 2025 Conexão Sustentável | Mercedes - PR
+  </footer>
+</body>
+
+</html>

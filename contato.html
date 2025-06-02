@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Conexão Sustentável</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --verde: #4CAF50;
+      --verde-escuro: #2e7d32;
+      --claro: #f4f4f4;
+      --texto: #333;
+      --erro: #e53935;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(120deg, var(--verde-escuro), var(--verde));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: var(--texto);
+    }
+
+    .login-box {
+      background-color: white;
+      padding: 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: var(--verde-escuro);
+    }
+
+    input {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.6rem 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 1rem;
+      background-color: var(--verde);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: var(--verde-escuro);
+    }
+
+    .error {
+      color: var(--erro);
+      font-weight: 600;
+      display: none;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      text-align: center;
+      width: 100%;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Entrar no Conexão Sustentável</h2>
+    <form id="formLogin">
+      <input type="email" id="email" placeholder="Seu e-mail" required />
+      <input type="password" id="senha" placeholder="Sua senha" required />
+      <button type="submit">Acessar</button>
+      <div class="error" id="mensagemErro">E-mail ou senha inválidos.</div>
+    </form>
+  </div>
+
+  <footer>
+    © 2025 Conexão Sustentável | Mercedes - PR
+  </footer>
+
+  <script>
+    const form = document.getElementById('formLogin');
+    const erro = document.getElementById('mensagemErro');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      erro.style.display = 'none';
+
+      const email = document.getElementById('email').value.trim();
+      const senha = document.getElementById('senha').value.trim();
+
+      // Validação simples
+      if (email.includes('@') && senha.length >= 5) {
+        // Redirecionamento para serviços.html
+        window.location.href = 'servicos.html';
+      } else {
+        // Mostra mensagem de erro
+        erro.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>
